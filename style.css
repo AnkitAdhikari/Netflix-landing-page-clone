@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #e50914;
+  --primary-color-hover: #b70710;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  height: 73vh;
+  border-bottom: 1rem solid #474747;
+  display: grid;
+  grid-template-rows: 7.6rem auto;
+  position: relative;
+  background-image: url("./netflix-assets/netflix-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  box-shadow: inset 2rem 0px 10rem 5rem #000;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  background-color: #00000078;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.showcase-top,
+.showcase-content {
+  z-index: 1;
+}
+
+.showcase-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 130rem; */
+  width: 100%;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  width: 15rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-hover);
+}
+
+.btn-md {
+  padding: 1rem 1.7rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.heading-primary,
+.heading-description {
+  color: #ffffff;
+}
+
+.heading-primary {
+  font-size: 4.5rem;
+  padding: 3rem 0;
+}
+
+.showcase-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-description {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.heading-description.secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.cta-form {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-GS {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  height: 6rem;
+}
+
+.email-container {
+  border: 1px solid #ffffff8f;
+  position: relative;
+  height: 6rem;
+  background-color: #0000008a;
+  border-radius: 0.5rem;
+}
+
+.email-container:hover {
+  cursor: text;
+}
+
+.email-container::before {
+  content: "Email address";
+  width: 100%;
+  height: var(--beforeHeight, 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  color: #e2e2e2;
+  font-size: var(--beforeFont, 1.6rem);
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  transition: all 0.3s;
+}
+
+.email-container input {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
