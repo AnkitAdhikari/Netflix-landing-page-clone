@@ -1,6 +1,7 @@
 :root {
   --primary-color: #e50914;
   --primary-color-hover: #b70710;
+  --border-color: #202020;
 }
 
 * {
@@ -24,7 +25,7 @@ a {
 
 .showcase {
   height: 73vh;
-  border-bottom: 1rem solid #474747;
+  border-bottom: 0.7rem solid var(--border-color);
   display: grid;
   grid-template-rows: 7.6rem auto;
   position: relative;
@@ -171,4 +172,45 @@ a {
   color: #fff;
   padding: 0 2rem;
   font-size: 2rem;
+}
+
+main {
+  background-color: #000;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.7rem solid var(--border-color);
+  padding: 7rem 0;
+}
+
+.feature-container {
+  width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.feature-text-box .heading-description {
+  text-align: left;
+}
+
+.tv {
+  position: relative;
+}
+
+.tv img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.tv-video {
+  position: absolute;
+  top: 21%;
+  left: 13.5%;
+  width: 72%;
+  z-index: 0;
 }
