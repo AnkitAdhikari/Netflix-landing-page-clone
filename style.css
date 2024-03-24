@@ -17,6 +17,7 @@ html {
 body {
   line-height: 1;
   font-family: "Poppins", sans-serif;
+  background-color: #000;
 }
 
 a {
@@ -191,6 +192,11 @@ section {
   background-color: #000;
 }
 
+.faq {
+  padding: 6rem 0;
+  border-bottom: 0.7rem solid var(--border-color);
+}
+
 .feature {
   display: flex;
   align-items: center;
@@ -303,32 +309,71 @@ section {
   border: 1px solid white;
 }
 
+.question-container,
+.answer {
+  padding: 0 3rem;
+  width: 95%;
+  margin: auto auto;
+}
+
 .question-container {
   display: flex;
   color: #fff;
   justify-content: space-between;
+  align-items: center;
   font-size: 2.3rem;
-  background-color: #454545;
-  margin-bottom: 1px;
+  background-color: #303030;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
   cursor: pointer;
   user-select: none;
+  height: 8.5rem;
+}
+
+.question-container:hover {
+  background-color: #414141;
 }
 .answer {
   color: #fff;
   font-size: 2.3rem;
-  background-color: #454545;
+  background-color: #2d2d2d;
+}
+
+.answer p {
+  padding: 2rem 0;
+}
+
+.switch ion-icon {
+  font-size: 4.8rem;
+  --ionicon-stroke-width: 16px;
+}
+
+footer {
+  background-color: #000;
+  padding: 15rem 5rem;
+}
+
+.bottom-cta {
+  margin-top: 6rem;
 }
 
 .footer-nav .nav-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2rem;
   list-style: none;
+}
+
+.nav-list a {
+  color: #ffffffb3;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 .footer-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
 }
 
 @keyframes download {
