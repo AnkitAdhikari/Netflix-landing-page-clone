@@ -32,6 +32,11 @@ a {
   text-align: center;
 }
 
+.wrapper {
+  width: 130rem;
+  margin: auto auto;
+}
+
 .showcase {
   height: 73vh;
   border-bottom: 0.7rem solid var(--border-color);
@@ -313,7 +318,6 @@ section {
 .answer {
   padding: 0 3rem;
   width: 95%;
-  margin: auto auto;
 }
 
 .question-container {
